@@ -237,7 +237,7 @@ function childthemename_get_svg( $icon = '' , $args = array() ) {
 	 */
 	if ( $args['title'] ) {
 		$aria_hidden = '';
-		$unique_id = uniqid();
+		$unique_id = childthemename_unique_id();
 		$aria_labelledby = ' aria-labelledby="title-' . $unique_id . '"';
 
 		if ( $args['desc'] ) {
